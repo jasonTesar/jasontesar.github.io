@@ -1,0 +1,136 @@
+/* Element styles -----------------------------------------*/
+
+body {
+  color: #302C2e;
+}
+
+h1,
+h2,
+h5 {
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+/* Overlay styles ----------------------------------------*/
+
+#overlay {
+  display: none;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.x {
+  display: flex;
+  align-self: flex-end;
+  border: none;
+  background-color: inherit;
+  color: #4f4f4f;
+  font-size: 1.5rem;
+}
+
+#project-details {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1.6px solid #c4c4c4;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #8e8e8e;
+  margin: auto;
+  padding: 35px;
+}
+
+/* Navbar styles ----------------------------------------*/
+.gray-blue a {
+  color: #302C2e;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  opacity: 0.4;
+  margin: .5rem;
+}
+
+/* Projects section styles --------------------------------*/
+
+.card:hover {
+  box-shadow: 0 0 8px 4px rgba(140, 140, 140, 0.2);
+}
+
+.btn {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+#contact h6 {
+  margin-bottom: 0px;
+}
+
+/* Background & text color styles -------------------------------*/
+
+.black {
+  background-color: #302C2e;
+  color: #F2ECE5;
+}
+
+.beige {
+  background-color: #F2ECE5;
+  color: #302C2e;
+}
+
+.blue {
+  background-color: #426779;
+  color: #F2ECE5;
+}
+
+.gray-blue {
+  background-color: #7a8284;
+  color: #F2ECE5;
+}
+
+.gray-green {
+  background-color: #535e56;
+  color: #F2ECE5;
+}
+
+.dark {
+  color: #302C2e;
+}
+
+.light {
+  color: #F2ECE5;
+}
+
+.thin {
+  font-weight: lighter;
+}
+
+/* Media queries -------------------------------*/
+
+@media (max-width: 732px) {
+  .btn {
+    font-size: .85rem;
+    padding-left: .4rem;
+    padding-right: .4rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .contact {
+    display: flex;
+    align-items: center;
+  }
+}
