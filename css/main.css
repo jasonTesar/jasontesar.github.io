@@ -11,45 +11,13 @@ h5 {
   font-weight: 100;
 }
 
-/* Overlay styles ----------------------------------------*/
-
-#overlay {
-  display: none;
-  position: fixed;
-  background-color: rgba(0, 0, 0, 0.8);
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-.x {
-  display: flex;
-  align-self: flex-end;
-  border: none;
-  background-color: inherit;
-  color: #4f4f4f;
-  font-size: 1.5rem;
-}
-
-#project-details {
-  width: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: 1.6px solid #c4c4c4;
-  border-radius: 6px;
-  background-color: #fff;
-  color: #8e8e8e;
-  margin: auto;
-  padding: 35px;
-}
-
 /* Navbar styles ----------------------------------------*/
+
 .gray-blue a {
   color: #302C2e;
 }
+
+/* Header styles ----------------------------------------*/
 
 .intro {
   display: flex;
@@ -68,6 +36,71 @@ h5 {
   opacity: 1.0;
 }
 
+/* Overlay styles ----------------------------------------*/
+
+#overlay {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.x {
+  display: inline;
+  align-self: flex-end;
+  border: none;
+  background-color: inherit;
+  color: #4f4f4f;
+  font-size: 1.5rem;
+}
+
+.project-full {
+  display: none;
+}
+
+#project-details {
+  width: 300px;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1.6px solid #c4c4c4;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #302C2e;
+  margin: auto;
+  padding: 10px;
+  overflow: auto;
+}
+
+.p-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.p-info h5 {
+  text-align: center;
+}
+
+#project-details h5 {
+  margin-bottom: 1.5rem;
+}
+
+#project-details img,
+#project-details p {
+  margin-bottom: 1rem;
+}
+
+#project-details p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 /* Projects section styles --------------------------------*/
 
 .card:hover {
@@ -78,6 +111,8 @@ h5 {
   margin-left: 2px;
   margin-right: 2px;
 }
+
+/* Contact section styles --------------------------------*/
 
 #contact h6 {
   margin-bottom: 0px;
@@ -95,31 +130,9 @@ h5 {
   color: #302C2e;
 }
 
-.blue {
-  background-color: #426779;
-  color: #F2ECE5;
-}
-
 .gray-blue {
   background-color: #7a8284;
   color: #F2ECE5;
-}
-
-.gray-green {
-  background-color: #535e56;
-  color: #F2ECE5;
-}
-
-.dark {
-  color: #302C2e;
-}
-
-.light {
-  color: #F2ECE5;
-}
-
-.thin {
-  font-weight: lighter;
 }
 
 /* Media queries -------------------------------*/
@@ -139,9 +152,37 @@ h5 {
   }
 }
 
+@media (min-width: 768px) {
+  #project-details {
+    width: 668px;
+    padding: 15px;
+  }
+  .p-image-and-info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .project-full {
+    display: inline;
+    width: 50%;
+    border: 1px solid #7a8284;
+  }
+  .p-info {
+    width: 50%;
+    margin-left: 10px;
+  }
+}
+
 @media (min-width: 992px) {
   .contact {
     display: flex;
     align-items: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  #project-details {
+    width: 924px;
+    padding: 20px;
   }
 }
