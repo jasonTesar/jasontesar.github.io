@@ -43,7 +43,7 @@ const projectsInfo = [
     id: 'OnlineRegistrationForm',
     image: 'img/RegistrationFormFull.jpg',
     description: 'This registration form was built with a variety of HTML form elements, laid out responsively with Flexbox, and styled with CSS selectors.',
-    skills: 'HTML Forms, CSS, Flexbox'
+    skills: 'HTML Forms, CSS, Flexbox, Responsive Design'
   },
   { name: 'responsive layout',
     id: 'ResponsiveLayout',
