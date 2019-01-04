@@ -36,7 +36,7 @@ const projectsInfo = [
   { name: 'web style guide',
     id: 'WebStyleGuide',
     image: 'img/WebStyleGuideFull.jpg',
-    description: 'This responsive web page uses Sass to manage a network of separate CSS files for normalizing browser differences, base styling, components (buttons, form fields, layout grids, images, navigation, and typography), and utilities (inheritance, functions, mixins, placeholders, and variables). Although these features may be managed individually on complex projects, the result is a single, compliled CSS file &hellip; and a single web page to display the styles for the user.',
+    description: 'This responsive web page uses Sass to manage a network of separate CSS files for normalizing browser differences, base styling, components (buttons, form fields, layout grids, images, navigation, and typography), and utilities (inheritance, functions, mixins, placeholders, and variables). Although these features may be managed individually on complex projects, the result is a single, compiled CSS file &hellip; and a single web page to display the styles for the user.',
     skills: 'HTML, CSS, Sass, Responsive Design'
   },
   { name: 'online registration form',
