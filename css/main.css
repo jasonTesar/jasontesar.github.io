@@ -78,6 +78,10 @@ h5 {
   overflow: auto;
 }
 
+.x:hover {
+  color: lightgray;
+}
+
 .p-info {
   display: flex;
   flex-direction: column;
